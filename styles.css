@@ -1,0 +1,188 @@
+
+/* Resetting some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Banner Styling */
+.banner {
+    background-color: #a9d87c;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size:30px;
+}
+
+/* Top Navigation */
+.top-nav {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.top-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.top-nav ul li {
+    display: inline;
+    margin: 0 20px;
+    padding: 10px 20px;
+}
+
+.top-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.top-nav ul li.active {
+    /*background-color: #0077cc;*/
+    background-color: #f4f4f4;
+}
+.top-nav li.active a {
+    color:#333;
+}
+
+.top-nav ul li:hover {
+    background-color: #555;
+}
+
+/* Image Navigation */
+.image-nav {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.image-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.image-nav ul li {
+    flex: 1;
+}
+
+.image-nav ul li img {
+    /* width: 100%; */
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.image-nav ul li img.active{
+    border: 3px solid #0077cc;
+}
+
+.image-nav ul li img:hover {
+    transform: scale(1.05);
+}
+
+/* Main Content Area */
+.page-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.itm-img img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.itm-description h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.itm-description p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* On small screens, stack the columns in page-content */
+    .page-content {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    /* Make navigation links display as block for better tap targets */
+    .top-nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    /* Image navigation becomes stacked */
+    .image-nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    /* Larger fonts for smaller screens */
+    .itm-description h2 {
+        font-size: 20px;
+    }
+
+    .itm-description p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjust layout for very small screens */
+    .banner {
+        padding: 10px 0;
+    }
+
+    .top-nav ul li {
+        margin: 0 10px;
+    }
+
+    .footer {
+        padding: 10px 0;
+    }
+
+    .itm-description h2 {
+        font-size: 18px;
+    }
+
+    .itm-description p {
+        font-size: 13px;
+    }
+}
