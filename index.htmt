@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEM WIZARD >:D</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="banner">
+        <h1> Rochester STEM Resource WIZARD</h1>
+    </header>
+
+    <nav class="top-nav">
+        <div class="container">
+            <ul class="d-flex justify-content-center flex-wrap gap-3 list-unstyled m-0">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="resource.html">Local Resources</a></li>
+                <li><a href="works/page1.html">Contact Us!</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="page-content">
+        <section class="itm-description">
+            <h2>Our Plan</h2>
+
+        </section>
+
+        <section class="itm-description">
+            <h2>Home</h2>
+            <h5>Our first goal!</h5>
+            <p>Have enough teachers share and use this resource for students interested in the technical aspects of
+                STEM.
+                <br></br>
+            </p>
+            <p>Students share and use this resource to contact and learn about topics that interest them.<br></br></p>
+
+            <p>Entails useful starting videos for students who are interested in specific subjects.<br></br></p>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p> Don't copy! Aditi spent SUPER long to made this website!</p>
+    </footer>
+</body>
+
+</html>
