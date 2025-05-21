@@ -1,4 +1,3 @@
-
 /* Resetting some default styles */
 * {
     margin: 0;
@@ -19,7 +18,7 @@ body {
     color: #fff;
     text-align: center;
     padding: 20px 0;
-    font-size:30px;
+    font-size: 30px;
 }
 
 /* Top Navigation */
@@ -52,8 +51,9 @@ body {
     /*background-color: #0077cc;*/
     background-color: #f4f4f4;
 }
+
 .top-nav li.active a {
-    color:#333;
+    color: #333;
 }
 
 .top-nav ul li:hover {
@@ -86,7 +86,7 @@ body {
     transition: transform 0.3s ease;
 }
 
-.image-nav ul li img.active{
+.image-nav ul li img.active {
     border: 3px solid #0077cc;
 }
 
@@ -136,6 +136,7 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+
     /* On small screens, stack the columns in page-content */
     .page-content {
         grid-template-columns: 1fr;
@@ -153,7 +154,7 @@ body {
         flex-direction: column;
         gap: 10px;
     }
-    
+
     /* Larger fonts for smaller screens */
     .itm-description h2 {
         font-size: 20px;
@@ -165,6 +166,7 @@ body {
 }
 
 @media (max-width: 480px) {
+
     /* Further adjust layout for very small screens */
     .banner {
         padding: 10px 0;
@@ -185,4 +187,59 @@ body {
     .itm-description p {
         font-size: 13px;
     }
+}
+
+
+/* Girls in STEM Spotlight Section */
+.girls-spotlight {
+    background-color: #f0e6ff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.girls-spotlight h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #6b3fa0;
+}
+
+.spotlight-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.spotlight-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.spotlight-card:hover {
+    transform: translateY(-5px);
+}
+
+.spotlight-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.spotlight-card h3 {
+    font-size: 20px;
+    color: #5a3b94;
+    margin-bottom: 10px;
+}
+
+.spotlight-card p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
 }
